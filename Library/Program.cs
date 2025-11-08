@@ -6,8 +6,12 @@ book.Title = "C# for beginners";
 book.Author = "BillGates";
 book.ISBN = "12345678";
 
+book.DisplayInfo();
+
 Book book1 = new Book();
 // This is another new book in our library
-book.Title = "C# Methods and Classes";
-book.Author = "Microsoft";
-book.ISBN = "55667788";
+book1.Title = "C# Methods and Classes";
+book1.Author = "Microsoft";
+book1.ISBN = "55667788";
+
+book1.DisplayInfo();
