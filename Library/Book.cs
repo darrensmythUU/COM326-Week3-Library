@@ -6,32 +6,33 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    class Book
+    public class Book
     {
-        private string title; // private field
-        private string author; // private field
-        private string isbn; // private field
+        // Private Fields
+        private string title;
+        private string author;
+        private string isbn;
 
-        //Title property to allow access to the title private field
+        // Get/Set Constructors
         public string Title
         {
-            get { return title; } // Get Method
-            set { title = value; } // Get Method
+            get { return title; }
+            set { title = value; }
         }
 
         public string Author
         {
-            get { return author; } // Get Method
-            set { author = value; } // Get Method
+            get { return author; }
+            set { author = value; }
         }
 
         public string ISBN
         {
-            get { return isbn; } // Get Method
-            set { isbn = value; } // Get Method
+            get { return isbn; }
+            set { isbn = value; }
         }
 
-        // Example of a constructor that allows us to 'construct' a new Book object
+        // Constructor for Book object
         public Book(string bookTitle, string bookAuthor, string bookISBN)
         {
             this.Title = bookTitle;
@@ -39,6 +40,7 @@ namespace Library
             this.ISBN = bookISBN;
         }
 
+        // Methods
         public void DisplayInfo()
         {
             Console.WriteLine($"Book Title: {Title}");

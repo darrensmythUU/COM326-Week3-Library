@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    internal class Member
+    public class Member
     {
         // Private Fields
         private int memberID;
