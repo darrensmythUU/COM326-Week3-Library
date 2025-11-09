@@ -15,10 +15,16 @@ class Program
         members.Add(new Member(1, "John Smith", "1 High Street", 0790090090));
         members.Add(new Member(2, "Mary Jones", "102 Garden Road", 0790345666));
 
-        // Display all items within the Book List
+        // Display all items within the books List
         foreach (Book book in books)
         {
+            book.DisplayInfo();
+        }
 
+        // Display all items within the members List
+        foreach (Member member in members)
+        {
+            member.DisplayInfo();
         }
     }
 }
